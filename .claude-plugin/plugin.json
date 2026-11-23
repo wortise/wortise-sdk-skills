@@ -1,0 +1,26 @@
+{
+  "name": "wortise-sdk-integration",
+  "displayName": "Wortise SDK",
+  "version": "0.1.0",
+  "description": "Integrate the Wortise ads SDK correctly from your coding agent: set it up, add ad placements, audit the integration before release and diagnose problems, on Android, iOS, Flutter, React Native and Unity.",
+  "author": {
+    "name": "Wortise",
+    "url": "https://wortise.com"
+  },
+  "homepage": "https://docs.wortise.com",
+  "repository": "https://github.com/wortise/wortise-sdk-skills",
+  "license": "MIT",
+  "keywords": [
+    "wortise",
+    "ads",
+    "monetization",
+    "android",
+    "ios",
+    "flutter",
+    "react-native",
+    "unity"
+  ],
+  "documentationUrl": "https://docs.wortise.com",
+  "supportUrl": "https://github.com/wortise/wortise-sdk-skills/issues",
+  "icon": "./assets/icon.png"
+}

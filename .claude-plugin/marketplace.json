@@ -1,0 +1,15 @@
+{
+  "name": "wortise-sdk-skills",
+  "description": "Wortise's plugins for AI coding agents.",
+  "owner": {
+    "name": "Wortise",
+    "url": "https://wortise.com"
+  },
+  "plugins": [
+    {
+      "name": "wortise-sdk-integration",
+      "source": "./",
+      "description": "Integrate the Wortise ads SDK correctly from your coding agent: set it up, add ad placements, audit the integration before release and diagnose problems, on Android, iOS, Flutter, React Native and Unity."
+    }
+  ]
+}
