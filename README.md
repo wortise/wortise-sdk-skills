@@ -20,10 +20,9 @@ The skills are plain Markdown, with no scripts. They follow the
 
 | Client | How |
 | --- | --- |
-| **Claude Code** | `/plugin install wortise-sdk-integration --marketplace wortise/wortise-sdk-skills` |
+| **Claude Code** | `/plugin marketplace add wortise/wortise-sdk-skills`, then `/plugin install wortise-sdk-integration@wortise-sdk-skills` |
 | **Codex** | `codex plugin marketplace add wortise/wortise-sdk-skills`, then `codex plugin add wortise-sdk-integration@wortise-sdk-skills` |
-| **Cursor** | Add the plugin marketplace `wortise/wortise-sdk-skills` |
-| **Any agent that reads skills** (Android Studio, Xcode, VS Code, Gemini CLI and others) | `npx skills add wortise/wortise-sdk-skills` |
+| **Cursor, Gemini CLI, Cline and other agents that read skills** | `npx skills add wortise/wortise-sdk-skills`, in the root folder of the project |
 
 Then add the [AGENTS.md snippet](AGENTS-snippet.md) to your project, so the agent uses the skills
 every time it touches ad code. Agents load skills only some of the time, but always read
@@ -35,6 +34,7 @@ integration, the agent builds the app and reads the SDK logs with the tools of t
 ## Documentation
 
 - [Wortise SDK documentation](https://docs.wortise.com)
+- [Using the skills](https://docs.wortise.com/ai-agents/)
 - [Documentation for AI agents](https://docs.wortise.com/llms.txt)
 
 ## License
