@@ -55,6 +55,7 @@ The failure callbacks receive an `AdError`:
 | Manifest merger error on `minSdkVersion` | `minSdk` below 24 | `minSdk` 24 (ask the user first) |
 | `Unresolved reference: BuildConfig` after adding test mode | `BuildConfig` generation is disabled | `buildFeatures { buildConfig = true }`, or use `FLAG_DEBUGGABLE` |
 | R8 warnings in the release build (Kotlin metadata, missing `billingclient` or `bytedance` classes) | They come from the SDK and its ad networks | Expected while the build succeeds: add no rules |
+| Android Lint `NotificationPermission` error about `io.bidmachine.media3...DownloadService` | Video player of an ad network bundled with the SDK; does not affect release builds | If it stops `lint` or `check`, ignore it only for that package in the app module's `lint.xml`: `<issue id="NotificationPermission"><ignore regexp="io\.bidmachine\." /></issue>`. Never disable the check for the whole app |
 | Banner hidden under the navigation bar | Edge-to-edge drawing with `targetSdk` 35+ on Android 15+ | Handle the window insets in the layout |
 | `showAd()` does nothing | No ad loaded: still loading, failed, already shown, or an app open ad older than four hours | Check `isAvailable`, load in advance, reload after dismissed |
 | `loadAd()` gets no callback | The ad is already loading, or it is in cooldown after a failure | Check `isInCooldown` and `cooldownRemainingMs`; retry later |
