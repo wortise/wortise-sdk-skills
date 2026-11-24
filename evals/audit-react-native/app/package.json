@@ -1,0 +1,11 @@
+{
+  "name": "stackem",
+  "version": "3.1.0",
+  "main": "index.js",
+  "dependencies": {
+    "@wortise/react-native-sdk": "1.8.1",
+    "expo": "~54.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.4"
+  }
+}

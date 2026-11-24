@@ -1,0 +1,9 @@
+name: wordrush
+description: A word game.
+version: 2.3.0+23
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  wortise: ^1.8.3

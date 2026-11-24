@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Stackem",
+    "slug": "stackem",
+    "ios": { "bundleIdentifier": "com.example.stackem" },
+    "android": { "package": "com.example.stackem" },
+    "plugins": [
+      ["@wortise/react-native-sdk", { "androidGoogleAppId": "ca-app-pub-7302958164827315~4918273650" }]
+    ]
+  }
+}
